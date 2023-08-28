@@ -6,7 +6,7 @@ end
 
 class Decorator < Nameable
   def initialize(nameable)
-    super
+    super()
     @nameable = nameable
   end
 
@@ -17,7 +17,7 @@ end
 
 class CapitalizeDecorator < Decorator
   def correct_name
-    @nameable.correct_name.upcase
+    @nameable.correct_name.capitalize
   end
 end
 
@@ -27,10 +27,10 @@ class TrimmerDecorator < Decorator
       trimd_string = ''
       num = 0
       while num < 10
-        trimd_string += @nameable.correct_name.chars('')[num]
+        trimd_string += @nameable.correct_name.chars[num]
         num += 1
       end
-      trimd_string
+     return trimd_string
     end
     @nameable.correct_name
   end
