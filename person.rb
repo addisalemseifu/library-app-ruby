@@ -1,4 +1,4 @@
-require 'nameable'
+require_relative 'nameable'
 class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age
@@ -8,7 +8,7 @@ class Person < Nameable
     @parent_permission = parent_permission
     @name = name
     @age = age
-    @id = 0
+    @id = Random.random(1...1000)
   end
 
   private

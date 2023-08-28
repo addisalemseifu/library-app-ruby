@@ -1,5 +1,3 @@
-require_relative 'person.rb'
-
 class Nameable
   def correct_name
     raise NotImplementedError, 'Method not implemented'
@@ -37,6 +35,3 @@ class TrimmerDecorator < Decorator
     @nameable.correct_name
   end
 end
-
-
-
