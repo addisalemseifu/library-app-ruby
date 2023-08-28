@@ -1,3 +1,4 @@
+require 'person'
 class Teacher < Person
   def initialize(age, specialization, parent_permission: true, name: 'Unknown')
     super(name, age, parent_permission: parent_permission)
@@ -8,3 +9,6 @@ class Teacher < Person
     true
   end
 end
+
+puts 'addis'
+
