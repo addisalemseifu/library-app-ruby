@@ -30,7 +30,7 @@ class TrimmerDecorator < Decorator
         trimd_string += @nameable.correct_name.chars[num]
         num += 1
       end
-     return trimd_string
+      return trimd_string
     end
     @nameable.correct_name
   end
