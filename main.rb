@@ -22,30 +22,8 @@ class Person
 end
 
 
-class Student < Person
-    def initialize(name,age="Unknown",parent_permission=true,classroom)
-        @parent_permission = parent_permission
-        @name = name
-        @age = age
-        @classroom = classroom
-        @id;
-    end
-    def play_hooky
-        "¯\(ツ)/¯"
-    end
-end
 
-class Teacher < Person
-    def initialize(name,age="Unknown",parent_permission=true,specialization)
-        @parent_permission = parent_permission
-        @name = name
-        @age = age
-        @specialization = specialization
-        @id;
-    end
-    def can_use_services?
-        true
-    end
-end
+
+
 
 
