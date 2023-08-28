@@ -2,10 +2,11 @@ class Person
     attr_reader :id
     attr_accessor :name
     attr_accessor :age
-    def def initialize(name,age="Unknown",parent_permission=true)
+    def initialize(name,age="Unknown",parent_permission=true)
       @parent_permission = parent_permission
       @name = name
       @age = age
+      @id;
     end
 
     private
@@ -27,6 +28,7 @@ class Student < Person
         @name = name
         @age = age
         @classroom = classroom
+        @id;
     end
     def play_hooky
         "¯\(ツ)/¯"
@@ -39,8 +41,11 @@ class Teacher < Person
         @name = name
         @age = age
         @specialization = specialization
+        @id;
     end
     def can_use_services?
         true
     end
 end
+
+
