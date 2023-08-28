@@ -49,9 +49,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Add Person class**
-- **Add Student class wich inherits form Person class**
-- **Add Teacher class wich inherits form Person class**
+- **Create a class Nameable**
+- **Turn my Person class to Nameable**
+- **Prepare base Decorator**
+- **Prepare CapitalizeDecorator and TrimmerDecorator**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
