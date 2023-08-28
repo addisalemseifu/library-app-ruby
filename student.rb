@@ -1,11 +1,7 @@
 class Student < Person
-  def initialize(name, classroom:, parent_permission: true, age: 'Unknown')
-    @parent_permission = parent_permission
-    @name = name
-    @age = age
+  def initialize(age, classroom:, parent_permission: true, name: 'Unknown')
+    super(age, name, parent_permission: parent_permission)
     @classroom = classroom
-    @id = 0
-    super
   end
 
   def play_hooky
