@@ -27,7 +27,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [The Morse Code] <a name="about-project"></a>
+# 📖 [OOP school library] <a name="about-project"></a>
 
 
 **[OOP school library]** is a an object oriented program which can record what books are in the library and who borrows them. In addition to this the syste will allow the user to 1. Add new students or teachers 2. Add new books 3. Save rocords fo who borrowed a given book and when.

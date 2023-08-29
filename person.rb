@@ -1,7 +1,8 @@
 require_relative 'nameable'
+require_relative 'rental'
 class Person < Nameable
   attr_reader :id
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rental
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()
@@ -29,8 +30,8 @@ class Person < Nameable
     @name
   end
 
-  def add_rentals(rental)
+  def add_rentals(date,book)
     @rental.push(rental)
-    rental.belong_to_person = self
+    Rental.new(date, book, self)
   end
 end
