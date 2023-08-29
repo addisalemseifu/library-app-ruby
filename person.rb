@@ -9,6 +9,7 @@ class Person < Nameable
     @name = name
     @age = age
     @id = Random.random(1...1000)
+    @rental = []
   end
 
   private
@@ -26,5 +27,10 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def add_rentals(rental)
+    @rental.push(rental)
+    rental.belong_to_person = self
   end
 end
