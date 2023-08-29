@@ -15,7 +15,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Install](#install)
@@ -55,14 +54,6 @@
 - **Create a class Rental**
 - **Create the many-to-many (also has-many-through) relationship between Person and Book using the intermediate class Rental**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Comming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
