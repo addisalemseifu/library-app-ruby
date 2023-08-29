@@ -15,7 +15,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Install](#install)
@@ -28,7 +27,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [The Morse Code] <a name="about-project"></a>
+# 📖 [OOP school library] <a name="about-project"></a>
 
 
 **[OOP school library]** is a an object oriented program which can record what books are in the library and who borrows them. In addition to this the syste will allow the user to 1. Add new students or teachers 2. Add new books 3. Save rocords fo who borrowed a given book and when.
@@ -49,18 +48,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Create a class Nameable**
-- **Turn my Person class to Nameable**
-- **Prepare base Decorator**
-- **Prepare CapitalizeDecorator and TrimmerDecorator**
+- **Create a class Classroom**
+- **Create the has-many/belongs-to relationship between Classroom and Student**
+- **Create a class Book with the following**
+- **Create a class Rental**
+- **Create the many-to-many (also has-many-through) relationship between Person and Book using the intermediate class Rental**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Comming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
