@@ -14,7 +14,6 @@ end
 def list_all_people
   persons = Student.student_list + Teacher.teacher_list
   persons.length
-  puts 'optionsdfsdf'
   persons.each do |person|
     puts "Name: #{person.name}, Age: #{person.age}"
   end
@@ -45,7 +44,7 @@ def create_a_person
     name = gets.chomp
     print 'specialization:'
     specialization = gets.chomp
-    Teacher.new(age, specialization, name)
+    Teacher.new(specialization, age, name)
   end
   puts 'Person created successfully!'
   main
