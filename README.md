@@ -30,7 +30,7 @@
 # 📖 [OOP school library] <a name="about-project"></a>
 
 
-**[OOP school library]** is a an object oriented program which can record what books are in the library and who borrows them. In addition to this the syste will allow the user to 1. Add new students or teachers 2. Add new books 3. Save rocords fo who borrowed a given book and when.
+**[OOP school library]** is a an object oriented program which can record what books are in the library and who borrows them. In addition to this the system will allow the user to 1. Add new students or teachers 2. Add new books 3. Save rocords for who borrowed a given book and when 4.Create a rental 5. List all people 6. List all books
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,11 +48,22 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Create a class Classroom**
-- **Create the has-many/belongs-to relationship between Classroom and Student**
-- **Create a class Book with the following**
-- **Create a class Rental**
-- **Create the many-to-many (also has-many-through) relationship between Person and Book using the intermediate class Rental**
+- **Create app.rb file with the following methods called**
+
+    **List all books**
+    **List all people**
+    **Create a person (teacher or student, not a plain Person)**
+    **Create a book**
+    **Create a rental.**
+    **List all rentals for a given person id**
+    **CCreate a book**'- **CCreate a book**
+
+- **Create main.rb entry point with methods that can perform the following actions**
+
+    **Present the user with a list of options to perform**
+    **Lets users choose an option**
+    **If needed, ask for parameters for the option**
+    **Have a way to quit the app**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
