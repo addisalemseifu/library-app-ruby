@@ -1,4 +1,5 @@
 require_relative 'app'
+
 def main
   puts 'Welcome to School library App'
   puts 'Please choose an option by entering a number'
@@ -9,9 +10,7 @@ def main
   puts '5 - Create a rental'
   puts '6 - List all rentals for a given person id'
   puts '7 - Exit'
-
   choice = gets.chomp
-
   case choice
   when '1' then list_all_book
   when '2' then list_all_people
@@ -19,7 +18,6 @@ def main
   when '4' then create_a_book
   when '5' then create_a_rental
   when '6' then list_all_rentals
-  when '7' then exit
   end
 end
 
