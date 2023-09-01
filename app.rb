@@ -1,9 +1,12 @@
+require 'pry'
 require_relative 'teacher'
 require_relative 'student'
 require_relative 'book'
 require_relative 'person'
 require_relative 'rental'
 def list_all_book
+  naming ='addis'
+  binding.pry
   puts 'You have no book in the cart!' if Book.book_list.empty?
   Book.book_list.each do |book|
     puts "Title: #{book.title}, Author: #{book.author}"
