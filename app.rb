@@ -47,7 +47,7 @@ def create_a_person
     name = gets.chomp
     print 'specialization:'
     specialization = gets.chomp
-    Teacher.new(specialization, age, name)
+    Teacher.new(age, specialization, name)
   end
   puts 'Person created successfully!'
   main
