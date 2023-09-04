@@ -8,7 +8,8 @@ def list_all_book
   Book.book_list.each do |book|
     puts "Title: #{book.title}, Author: #{book.author}"
   end
-  main
+  Main.new.prompter
+  Director.new.director
 end
 
 def list_all_people
@@ -17,7 +18,8 @@ def list_all_people
   persons.each do |person|
     puts "Name: #{person.name}, Age: #{person.age}"
   end
-  main
+  Main.new.prompter
+  Director.new.director
 end
 
 def per_met
@@ -47,7 +49,8 @@ def create_a_person
     Teacher.new(specialization, age, name)
   end
   puts 'Person created successfully!'
-  main
+  Main.new.prompter
+  Director.new.director
 end
 
 def create_a_book
@@ -59,7 +62,8 @@ def create_a_book
   puts 'Book created successfully!'
   puts book.rental.length
   puts Book.book_list[0].title
-  main
+  Main.new.prompter
+  Director.new.director
 end
 
 def create_a_rental
@@ -67,8 +71,9 @@ def create_a_rental
   person_choice = myperson_choice
   date = my_date
   rental = Rental.new(date, book_choice, person_choice)
-  puts "#{rental}Rental created successfully"
-  main
+  puts "Rental created successfully"
+  Main.new.prompter
+  Director.new.director
 end
 
 def my_choice
@@ -110,7 +115,8 @@ def list_all_rentals
   renter[0].rental.each do |rental|
     puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
   end
-  main
+  Main.new.prompter
+  Director.new.director
 end
 
 def exit
