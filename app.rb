@@ -1,3 +1,6 @@
+require 'pry'
+require 'json'
+require_relative 'file_writer'
 require_relative 'teacher'
 require_relative 'student'
 require_relative 'book'
@@ -70,7 +73,7 @@ def create_a_rental
   book_choice = my_choice
   person_choice = myperson_choice
   date = my_date
-  Rental.new(date, book_choice, person_choice)
+  rental = Rental.new(date, book_choice, person_choice)
   puts 'Rental created successfully'
   Main.new.prompter
   Director.new.director
@@ -120,5 +123,9 @@ def list_all_rentals
 end
 
 def exit
+FileWriter.write
+binding.pry
   exit
 end
+
+

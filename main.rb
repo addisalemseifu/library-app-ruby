@@ -1,5 +1,6 @@
 require_relative 'app'
 require_relative 'director'
+require_relative 'file_reader'
 
 class Main
   def prompter
@@ -17,3 +18,4 @@ end
 
 Main.new.prompter
 Director.new.director
+FileLoader.read
