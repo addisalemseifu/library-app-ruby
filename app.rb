@@ -70,8 +70,8 @@ def create_a_rental
   book_choice = my_choice
   person_choice = myperson_choice
   date = my_date
-  rental = Rental.new(date, book_choice, person_choice)
-  puts "Rental created successfully"
+  Rental.new(date, book_choice, person_choice)
+  puts 'Rental created successfully'
   Main.new.prompter
   Director.new.director
 end
