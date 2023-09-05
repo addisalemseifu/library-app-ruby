@@ -30,7 +30,12 @@
 # 📖 [OOP school library] <a name="about-project"></a>
 
 
-**[OOP school library]** is a an object oriented program which can record what books are in the library and who borrows them. In addition to this the system will allow the user to 1. Add new students or teachers 2. Add new books 3. Save rocords for who borrowed a given book and when 4.Create a rental 5. List all people 6. List all books
+**[OOP school library]** is a an object oriented program which can record what books are in the library and who borrows them. In addition to this the system will allow the user to 
+1. Add new students or teachers 
+2. Add new books 
+3. Save rocords for who borrowed a given book and when 
+4. Create a rental 
+5. List all people 6. List all books
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -110,6 +115,11 @@ Install this project with:
 - Twitter: [@Addisalem Seifu](https://twitter.com/addisalems92518)
 - LinkedIn: [addisalem seifu](https://www.linkedin.com/in/addisalemseifu/)
 
+👤 **MARVIN OTIENO**
+
+- GitHub: [@githubhandle](https://github.com/marvin-nyalik/)
+- Twitter: [@twitterhandle](https://twitter.com/NyalikMarvin)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marvin-otieno-nyalik/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,6 +129,7 @@ Install this project with:
 
 - [ ] **User interface**
 - [ ] **Testing**
+- [ ] **Preserve Data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
