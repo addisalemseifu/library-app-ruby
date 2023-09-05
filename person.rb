@@ -4,6 +4,7 @@ class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age, :rental, :list_of_people
 
+  @person_list = []
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()
     @parent_permission = parent_permission
@@ -28,5 +29,9 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  class << self
+    attr_accessor :person_list
   end
 end
