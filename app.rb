@@ -120,6 +120,6 @@ def list_all_rentals
 end
 
 def exit_app
-  puts "Goodbye"
+  puts 'Goodbye'
   exit
 end
