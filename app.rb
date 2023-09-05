@@ -119,6 +119,7 @@ def list_all_rentals
   Director.new.director
 end
 
-def exit
+def exit_app
+  puts "Goodbye"
   exit
 end
