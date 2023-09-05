@@ -3,7 +3,7 @@ require_relative 'director'
 require_relative 'file_reader'
 
 class Main
-  def prompter
+  def self.prompter
     puts 'Welcome to School library App'
     puts 'Please choose an option by entering a number'
     puts '1 - List all books'
@@ -15,7 +15,7 @@ class Main
     puts '7 - Exit'
   end
 end
+# FileReader.new.read
+Main.prompter
+Director.director
 
-Main.new.prompter
-Director.new.director
-FileLoader.read
