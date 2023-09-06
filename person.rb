@@ -35,7 +35,7 @@ class Person < Nameable
     attr_accessor :person_list
   end
 
-  def as_json()
+  def as_json(*)
     {
       parent_permission: @parent_permission,
       name: @name,

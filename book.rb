@@ -13,7 +13,7 @@ class Book
     attr_accessor :book_list
   end
 
-  def as_json()
+  def as_json(*)
     {
       title: @title,
       author: @author,

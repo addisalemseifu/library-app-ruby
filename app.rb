@@ -81,6 +81,7 @@ class App
 
   def my_choice
     puts 'Select a book from the following list by number'
+    FileWriter.write_file
     puts 'You have no book in the cart' if Book.book_list.empty?
     Book.book_list.each_with_index do |book, index|
       puts "#{index}) Title: #{book['title']}, Author: #{book['author']}"
@@ -117,7 +118,6 @@ class App
       rental['id'] == id.to_i
     end
 
-    puts renter
     rented_list_id = renter[0]['rental']
     puts rented_list_id
     rental_info = rental_list.select do |info|
