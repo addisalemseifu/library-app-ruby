@@ -1,6 +1,5 @@
 require_relative 'person'
 class Student < Person
-  # @student_list = []
   def initialize(classroom, age, name = 'Unknown', parent_permission: true)
     @classroom = classroom
     self.class.superclass.person_list << self
