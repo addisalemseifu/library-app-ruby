@@ -6,12 +6,10 @@ class Rental
     @date = date
     @book = book
     @person = person
-    book.rental << self
-    person.rental << self
+    @id = rand(1...1000)
+    book["rental"] << @id
+    person["rental"] << @id
     self.class.all_rentals << self
   end
 
-  class << self
-    attr_accessor :all_rentals
-  end
 end

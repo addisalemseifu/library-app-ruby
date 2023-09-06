@@ -1,6 +1,8 @@
 require_relative 'app'
+require_relative 'file_reader'
 # rubocop:disable Metrics/CyclomaticComplexity
 def main
+  FileReader.read_file
   app = App.new
   response = nil
   while response != '7'
@@ -18,7 +20,7 @@ def main
       app.create_a_rental
     when '6'
       app.list_rentals_for_person_id
-    when '7' then puts 'Thank you for using this app!'
+    when '7' then app.exit_app
     end
   end
 end
