@@ -7,9 +7,8 @@ class Rental
     @book = book
     @person = person
     @id = rand(1...1000)
-    book["rental"] << @id
-    person["rental"] << @id
+    book['rental'] << @id
+    person['rental'] << @id
     self.class.all_rentals << self
   end
-
 end

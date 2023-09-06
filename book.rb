@@ -13,7 +13,7 @@ class Book
     attr_accessor :book_list
   end
 
-  def as_json(options= {})
+  def as_json()
     {
       title: @title,
       author: @author,
@@ -21,7 +21,7 @@ class Book
     }
   end
 
-  def to_json(*options, max_nesting: 400 )
+  def to_json(*options, max_nesting: 400)
     as_json(*options).to_json(max_nesting: max_nesting)
   end
 end

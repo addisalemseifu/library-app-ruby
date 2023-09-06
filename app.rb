@@ -16,7 +16,7 @@ class App
     puts 'You have no book in the cart!' if Book.book_list.empty?
     FileReader.read_file
     Book.book_list.each do |book|
-      puts "Title: #{book["title"]}, Author: #{book["author"]}"
+      puts "Title: #{book['title']}, Author: #{book['author']}"
     end
   end
 
@@ -25,7 +25,7 @@ class App
     FileReader.read_file
     persons = Person.person_list
     persons.each do |person|
-      puts "Name: #{person["name"]}, Age: #{person["age"]}"
+      puts "Name: #{person['name']}, Age: #{person['age']}"
     end
   end
 
@@ -65,7 +65,7 @@ class App
     title = gets.chomp
     print 'Author:'
     author = gets.chomp
-    book = Book.new(title, author)
+    Book.new(title, author)
     FileWriter.write_file
     puts 'Book created successfully!'
   end
@@ -81,11 +81,9 @@ class App
 
   def my_choice
     puts 'Select a book from the following list by number'
-    if Book.book_list.empty?
-      'You have no book in the cart'
-    end
+    puts 'You have no book in the cart' if Book.book_list.empty?
     Book.book_list.each_with_index do |book, index|
-      puts "#{index}) Title: #{book["title"]}, Author: #{book["author"]}"
+      puts "#{index}) Title: #{book['title']}, Author: #{book['author']}"
     end
 
     choice_of_book = gets.chomp.to_i
@@ -97,7 +95,7 @@ class App
     puts 'Select a person from the following list by number (not id)'
     persons.each_with_index do |person, index|
       puts "#{index}) [#{person.class}]
-     Name: #{person["name"]}, ID: #{person["id"]}, Age: #{person["age"]}"
+     Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
     end
 
     choice_of_person = gets.chomp.to_i
@@ -116,19 +114,19 @@ class App
     print 'ID of person: '
     id = gets.chomp
     renter = persons.select do |rental|
-      rental["id"] == id.to_i
+      rental['id'] == id.to_i
     end
 
     puts renter
-rented_list_id = renter[0]["rental"]
-puts rented_list_id
+    rented_list_id = renter[0]['rental']
+    puts rented_list_id
     rental_info = rental_list.select do |info|
-      info["person"]["id"] == id.to_i
+      info['person']['id'] == id.to_i
     end
     puts 'Rentals:'
     puts 'Date: '
     rental_info.each do |rental|
-      puts "Date: #{rental["date"]}, Book \"#{rental["book"]["title"]}\" by #{rental["book"]["author"]}"
+      puts "Date: #{rental['date']}, Book \"#{rental['book']['title']}\" by #{rental['book']['author']}"
     end
   end
 

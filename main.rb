@@ -2,7 +2,6 @@ require_relative 'app'
 require_relative 'file_reader'
 # rubocop:disable Metrics/CyclomaticComplexity
 def main
-  FileReader.read_file
   app = App.new
   response = nil
   while response != '7'

@@ -35,7 +35,7 @@ class Person < Nameable
     attr_accessor :person_list
   end
 
-  def as_json(options= {})
+  def as_json()
     {
       parent_permission: @parent_permission,
       name: @name,
@@ -45,7 +45,7 @@ class Person < Nameable
     }
   end
 
-  def to_json(*options, max_nesting: 400 )
+  def to_json(*options, max_nesting: 400)
     as_json(*options).to_json(max_nesting: max_nesting)
   end
 end
